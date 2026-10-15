@@ -2,7 +2,7 @@
 
 Paste a client chat → local AI (Ollama) extracts invoice details → review/edit → generate an A4 PDF → download or email it.
 
-![demo](preview.png)
+![demo](preview.gif)
 
 - **Stack:** Next.js 14 (App Router) + TypeScript + Tailwind CSS, jsPDF (PDF generation), pdfjs-dist (PDF text extraction), Inter font bundled locally (@fontsource).
 - **Offline:** everything runs locally. Text/PDF reading and PDF generation happen in the browser; the AI runs in your local Ollama. Only "Send via Email" needs internet (Resend).
