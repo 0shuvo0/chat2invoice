@@ -1,0 +1,18 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { background: #f4f5fb; color: #151a33; }
+@layer components {
+.card { @apply bg-white rounded-2xl shadow-card border border-lav-200/60; }
+.field { @apply w-full rounded-xl bg-lav-100 border border-transparent px-4 py-3 text-[15px] text-ink placeholder:text-slate-400 outline-none transition focus:border-brand-400 focus:bg-white focus:ring-4 focus:ring-brand-100; }
+.field-white { @apply w-full rounded-lg bg-white border border-lav-200 px-3 py-2.5 text-[14px] text-ink outline-none focus:border-brand-400 focus:ring-4 focus:ring-brand-100; }
+.label { @apply text-[13px] font-semibold text-ink; }
+.chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[12px] font-semibold; }
+.btn-primary { @apply w-full rounded-2xl bg-brand-600 text-white font-semibold shadow-lg shadow-brand-600/25 transition hover:bg-brand-700 active:scale-[.99] disabled:opacity-60 disabled:cursor-not-allowed; }
+}
