@@ -14,7 +14,7 @@ Paste a client chat → local AI (Ollama) extracts invoice details → review/ed
 ## Setup
 ```bash
 # 1. Install Ollama, then pull the model (one time, ~3 GB)
-ollama pull gemma3
+ollama pull gemma3:latest
 
 # 2. Install dependencies
 cd chat2invoice
